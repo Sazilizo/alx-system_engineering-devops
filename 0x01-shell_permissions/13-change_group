@@ -1,0 +1,2 @@
+#!/bin/bash
+chown /root/alx-system_engineering-devops/school hello

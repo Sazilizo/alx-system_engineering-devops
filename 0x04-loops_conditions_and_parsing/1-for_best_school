@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#this script prints Best School to screen 10 times using a for loop
+
+for ((num = 1; num <= 10; num++))
+do
+        echo "Best School"
+done

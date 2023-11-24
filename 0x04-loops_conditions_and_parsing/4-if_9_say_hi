@@ -2,10 +2,12 @@
 #this program prints Best School to 10
 #when it reaches 9 it prints Best School and hi
 
-for ((num = 1; num <=10; num++))
+counter=1
+while [ $counter -le 10 ]
 do
 	echo "Best School"
-	if ((num == 9)); then
+	if ((counter == 9)); then
 		echo "Hi"
 	fi
+	((counter++))
 done

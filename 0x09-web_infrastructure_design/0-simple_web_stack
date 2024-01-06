@@ -1,0 +1,20 @@
+What is a server
+A server is a software system that offers services, data and website info to the browser/client or the network on request
+
+What is the role of the domain name
+role of a domain name is used to translate or translate the IP address to its website name
+
+What type of DNS record www is in www.foobar.com
+Its's called the CNAME recod and the www past is a subdomain
+
+What is the role of the web server
+to provide quick information about a website and its content to the client on the web
+
+What is the role of the application server
+provides dynamic websites and information to the client
+
+What is the role of the database
+A databse is a system that stores valuable and vast information about basically anything
+
+What is the server using to communicate with the computer of the user requesting the website
+it uses HTTP or HTTPS

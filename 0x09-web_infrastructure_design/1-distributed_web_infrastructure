@@ -1,0 +1,24 @@
+link to design
+https://imgur.com/gallery/WBrjJAa
+
+For every additional element, why you are adding it
+- The two serves are used in order not to stress on server should there be too much traffic coming in
+- The load balancer's job is to evenly or appropriately distribute traffic to which ever server is available and is faster
+
+What distribution algorithm your load balancer is configured with and how it works
+- The algorithm used is Weighted Least Connections
+- It considers the servers speed and space and then distributes the traffic to whichever server can handle it and is available, providing balance
+
+Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both
+-Active-Passive: because this is only a website, the two serves are capable of working with this configuration
+one server is active all the time and while the other is wwaiting as a failover substitute, this does not affect traffic
+
+How a database Primary-Replica (Master-Slave) cluster works
+-it copies data from one database to another in a distributed database so users can quickly get data without interference
+
+
+What is the difference between the Primary node and the Replica node in regard to the application 
+A primary node is responsible for writing , quering the database
+A Replica node is responsible for carrying out the operations from the primary
+
+

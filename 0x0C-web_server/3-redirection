@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# configures Nginx server so that /redirect_me is redirecting to a different website
+# redirects to “301 Moved Permanently”
+
+sudo apt-get -y install nginx
+sudo bash -c 'echo "Hello World!" > /var/www/html/index.nginx-debian.html'
+
+redirection="\n\tlocation /redirect_me {\n\t\treturn 301 https://www.google.com;\n\t}\n"
+
+sudo sed -i "53s|.*|$redirection|" /etc/nginx/sites-enabled/default
+
+sudo /etc/init.d/nginx restart
